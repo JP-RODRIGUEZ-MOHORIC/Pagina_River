@@ -1,0 +1,157 @@
+body {
+    margin: 0;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/81/Escudo_monocrom%C3%A1tico_River_Plate.png);
+    background-size: 30px;
+  }
+
+.header{
+    border: solid red;
+    font-family: sans-serif;
+    padding-top: 10px;
+    background-color: #fff;
+}
+
+  .top-bar{
+    
+    color: red;
+    text-align: center;
+  }
+  
+.badge{
+    height: 45px;
+    width: 45px;
+}
+
+.badge-2{
+    height: 45px;
+    width: 45px;
+}
+  .title {
+    margin: 0;
+    display: inline;
+  }
+
+  .login{
+    position: absolute;
+    margin-left: 400px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+    text-decoration: none;
+  }
+  
+  .mid-bar {
+    background-color: #fff;
+  }
+  @media screen and (min-width: 768px) {
+    .mid-bar {
+      display: none;
+    }
+  }
+  
+  .icon-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    border: solid red;
+    margin-left: 1em;
+  }
+  .icon-menu__bar {
+    background-color: red;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    position: relative;
+    
+  }
+  .icon-menu__bar:after, .icon-menu__bar:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 30px;
+    height: 4px;
+    border-radius: 2px;
+    background-color: red;
+    top: -0.5em;
+    transition: all 0.2s;
+  }
+  .icon-menu__bar:after {
+    top: 0.5em;
+  }
+
+  .icon-menu__bar--simple {
+    height: 0;
+  }
+  .icon-menu__bar--simple:before, .icon-menu__bar--simple:after {
+    top: 0;
+    transform: rotate(-45deg);
+  }
+  .icon-menu__bar--simple:after {
+    transform: rotate(45deg);
+  }
+
+  
+  .menu {
+    background-color: #fff;
+    padding-left: 0;
+    margin-top: 0;
+    margin-left: 0;
+    list-style: none;
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    border-radius: 0 15px 15px 15px;
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    .menu {
+      display: flex;
+      justify-content: space-evenly;
+      transform: translateX(0);
+      border-radius: initial;
+    }
+  }
+  .menu--show {
+    transform: translateX(0);
+  }
+  .menu__item {
+    padding: 1em 3em;
+    border-bottom: 1px solid red;
+    font-size: 20px;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .menu__item:hover {
+    background-color: red;
+  }
+  @media screen and (min-width: 768px) {
+    .menu__item {
+      border-bottom: none;
+    }  
+  }
+  .menu__link {
+    color: red;
+    text-decoration: none;
+  }
+
+  .menu__link:hover {
+    color:#fff;
+  }
+
+  @media screen and (min-width: 768px) {
+    .menu__link:hover {
+      color: #fff;
+    }
+  }
+
+  .main{
+    border: solid red;
+  }
+
+  .footer{
+      background-color: red;
+      color: #fff;
+      font-size: 20px;
+      height: 50px;
+  }

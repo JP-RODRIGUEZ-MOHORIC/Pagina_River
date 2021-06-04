@@ -1,0 +1,177 @@
+body{
+    margin: 0;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/81/Escudo_monocrom%C3%A1tico_River_Plate.png);
+    background-size: 30px;
+}
+
+.header{
+padding-top: 10px;
+text-align: center;
+font-family: sans-serif;
+color: red;
+border: solid red;
+background-color: #fff;
+}
+
+.title{
+display: inline; 
+}
+
+.introduccion{
+font-size: 20px;
+}
+
+.main{
+margin: 0;
+font-family: sans-serif;
+color: red;
+border: solid red;
+}
+
+.list{
+    margin: 0;
+}
+
+.years{
+    margin-bottom: 10px;
+}
+.cup{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    list-style: none;
+    font-size: 30px;
+}
+
+.first-cup{
+    margin-top: 0;
+    padding-top: 10px;
+}
+
+.years{
+    margin-left: 75px;
+}
+
+.year{
+    font-size: 20px;
+    list-style: square;
+}
+
+.intercontinental{
+    margin-left: 20px;
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+
+.libertadores{
+margin-left: 5px;
+width: 70px;
+height: 40px;
+float: left;
+}
+
+.supercopa, .local{
+    width: 30px;
+    height: 40px;
+    float: left;
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.button-back{
+  position: absolute;
+  margin-top: 30px;
+  margin-left: 10px;
+  width: 70px;
+  height: 20px;
+  background-color: #fff;
+  border: solid red;
+  border-radius: 10px;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1080px) {
+  .button-back {
+    margin-top: 10px;
+  }
+}
+
+.fas{
+  color: red;
+}
+
+.button-text{
+  text-decoration: none;
+  color: red;
+  font-family: sans-serif;
+}
+
+.button-back:hover{
+  background-color: grey;
+}
+
+  .tooltip {
+    position: relative;
+  }
+  
+  .tooltip:hover + .tooltip-content {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .tooltip-content {
+    position: absolute;
+    right: 100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 275px;
+    font-size: 1rem;
+    background-color: #fff;
+    color: red;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+  
+  .tooltip-content__text-intercontinental {
+    padding: 5px 5px;
+  }
+  .tooltip-content__img-intercontinental {
+      padding-top: 50px;
+    max-width: 120px;
+    max-height: 120px;
+  } 
+
+  .tooltip-content__text-libertadores {
+    padding: 5px 5px;
+  }
+  .tooltip-content__img-libertadores {
+      padding-top: 50px;
+    width: 190px;
+    height: 120px;
+  } 
+
+  .tooltip-content__text-supercopasud {
+    padding: 5px 5px;
+  }
+  .tooltip-content__img-supercopasud {
+     padding-top: 50px;
+    width: 70px;
+    height: 120px;
+  } 
+
+  .tooltip-content__text-campeonato {
+    padding: 5px 5px;
+  }
+  .tooltip-content__img-campeonato {
+     padding-top: 50px;
+    width: 80px;
+    height: 100px;
+  } 
+
+.footer{
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    height: 50px;
+}

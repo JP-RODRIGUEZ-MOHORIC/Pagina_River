@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/81/Escudo_monocrom%C3%A1tico_River_Plate.png);
+    background-size: 30px;
+}
+
+.main{
+    margin-top: 200px;
+    margin-left: 750px;
+}
+
+.form{
+    width: 400px;
+    height: 200px;
+    border: solid red;
+    border-radius: 30px;
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #fff;
+}
+
+.title{
+    color: red;
+}
+
+.usuario, .contraseña{
+margin: 5px;
+padding: 5px;
+}
+
+.button{
+    margin: 5px;
+    color: red;
+    border: solid red;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color: grey;
+}
+
+.link{
+    text-decoration: none;
+    color: red;
+    width: 50px;
+    height: 10px;
+    margin-left: 250px;
+}
