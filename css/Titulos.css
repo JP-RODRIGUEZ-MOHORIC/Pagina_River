@@ -112,6 +112,7 @@ float: left;
 
   .tooltip {
     position: relative;
+    cursor: pointer;
   }
   
   .tooltip:hover + .tooltip-content {

@@ -4,11 +4,6 @@ body{
     background-size: 30px;
 }
 
-.main{
-    margin-top: 200px;
-    margin-left: 750px;
-}
-
 .form{
     width: 400px;
     height: 200px;
@@ -17,6 +12,9 @@ body{
     text-align: center;
     font-family: sans-serif;
     background-color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 200px;
 }
 
 .title{

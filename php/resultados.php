@@ -1,4 +1,7 @@
 <?php 
+
+include("conexion.php");
+
 $pregunta1 = $_POST['PreguntaUno'];
 $pregunta2 = $_POST['PreguntaDos'];
 $pregunta3 = $_POST['PreguntaTres'];
@@ -12,17 +15,19 @@ $pregunta10 = $_POST['PreguntaDiez'];
 
 echo '<link href="../css/resultado.css" type="text/css" rel="stylesheet">';
 
+session_start();
+ 
 $resultado = "resultado:";
 $puntos_texto = "puntos.";
 $mensaje = "";
+$mensaje2 = "Ya participaste";
 $puntos = 0;
+$nombre = $_SESSION['usuario'];
 
 if($pregunta1 == "V")
 {
     $puntos = $puntos + 10;
 }
-    
-
 
 if($pregunta2 == "F")
 {
@@ -83,7 +88,33 @@ if(($puntos >= 0) and ($puntos <= 40))
     $mensaje="Sos el hincha N°1 de River!!!";
 }
 
-echo "<p class = 'resultado'>$resultado</p>";
-echo "<p class='puntos'>$puntos</p>";
-echo "<p class='mensaje'>$mensaje</p>";
+
+
+if(isset($_POST["enviar"]))
+{
+
+$usuario = mysqli_query($conn,"SELECT * FROM  puntajes WHERE usuario = '$nombre'");
+
+$miusuario = mysqli_num_rows($usuario);
+
+ if($miusuario !=1){
+
+$sqlgrabar = "INSERT INTO puntajes(usuario, puntaje) values ('$nombre','$puntos')";
+
+if(mysqli_query($conn,$sqlgrabar))
+{
+    echo "<p class = 'resultado'>$resultado</p>";
+    echo "<p class='puntos'>$puntos</p>";
+    echo "<p class='mensaje'>$mensaje</p>";
+    
+} else
+{
+    echo "Error: ".$sqlgrabar."<br>".mysqli_error($conn);
+}
+}else
+{
+    echo "<p class='mensaje'>$mensaje2</p>";
+}
+}
+
 ?>

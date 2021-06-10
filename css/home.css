@@ -32,8 +32,22 @@ body {
     display: inline;
   }
 
-  .login{
-    margin-left: 400px;
+  .user{
+    margin-left: 200px;
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+  }
+  @media screen and (min-width: 768px) {
+    .user {
+      margin-left: 700px;
+      margin-right: 20px;
+    }
+  }
+  
+  .cerrar_sesion{
+    margin-left: 175px;
     margin-right: 20px;
     margin-top: 10px;
     font-size: 20px;
@@ -41,12 +55,12 @@ body {
     text-decoration: none;
   }
   @media screen and (min-width: 768px) {
-    .login {
+    .cerrar_sesion {
       margin-left: 700px;
       margin-right: 20px;
     }
   }
-  
+
   .mid-bar {
     background-color: #fff;
   }

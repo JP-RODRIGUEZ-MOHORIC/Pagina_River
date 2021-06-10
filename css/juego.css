@@ -53,6 +53,20 @@ font-size: 20px;
     background-color: grey;
   }
 
+  .user{
+    margin-left: 200px;
+    margin-right: 50px;
+    margin-top: 10px;
+    font-size: 20px;
+    color: red;
+  }
+  @media screen and (min-width: 1066px) {
+    .user {
+      margin-left: 1000px;
+      margin-right: 20px;
+    }
+  }
+
 .main{
 margin: 0;
 font-family: sans-serif;
@@ -87,7 +101,31 @@ color:red;
     background-color: grey;
 }
 
+.ranking{
+height: 35px;
+width: 95px;
+background-color: #fff;
+border: solid red;
+border-radius: 10px;
+margin-left: 20px;
+margin-bottom: 20px;
+margin-top: 5px;
+color:red;
+text-align: center;
+}
 
+.ranking:hover{
+  background-color: grey;
+}
+
+.ranking_text{
+  color: red;
+  font-family: sans-serif;
+  font-size: 15px;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 10px;
+}
 
 .footer{
     background-color: red;

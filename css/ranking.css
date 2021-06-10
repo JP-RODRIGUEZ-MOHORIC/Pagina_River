@@ -1,0 +1,99 @@
+body{
+    margin: 0;
+    background-image: url(https://upload.wikimedia.org/wikipedia/commons/8/81/Escudo_monocrom%C3%A1tico_River_Plate.png);
+    background-size: 30px;
+}
+
+.header{
+    padding-top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    color: red;
+    border: solid red;
+    background-color: #fff;
+    }
+    
+    .title{
+    display: inline; 
+    }
+    
+    .introduccion{
+    font-size: 20px;
+    }
+    
+    .button-back{
+        position: absolute;
+        margin-top: 30px;
+        margin-left: 10px;
+        width: 70px;
+        height: 20px;
+        background-color: #fff;
+        border: solid red;
+        border-radius: 10px;
+        padding: 5px;
+      }
+      
+      @media screen and (max-width: 614px) {
+        .button-back {
+          margin-top: 10px;
+        }
+      }
+      
+      .fas{
+        color: red;
+      }
+      
+      .button-text{
+        text-decoration: none;
+        color: red;
+        font-family: sans-serif;
+      }
+      
+      .button-back:hover{
+        background-color: grey;
+      }
+    
+      .user{
+        margin-left: 200px;
+        margin-right: 50px;
+        margin-top: 10px;
+        font-size: 20px;
+        color: red;
+      }
+      @media screen and (min-width: 1066px) {
+        .user {
+          margin-left: 1000px;
+          margin-right: 20px;
+        }
+      }
+
+.main{
+    font-family: sans-serif;
+}
+
+.table{
+    margin-left: auto;
+    margin-right: auto;
+    color: red;
+    text-align: center;
+    margin-top: 80px;
+    border: solid red;
+    background-color: #fff;
+    border: 2px; 
+    border-collapse: collapse;
+    width: 300px;
+    height: 200px;
+    margin-bottom: 80px;
+}
+
+.col_title, .col_content{
+border: solid red;
+font-size: 25px;
+}
+
+.footer{
+  background-color: red;
+  color: #fff;
+  font-size: 20px;
+  height: 50px;
+}
